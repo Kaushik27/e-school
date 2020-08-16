@@ -1,2 +1,2 @@
 # e-school
-e-school management system
+e-school management
