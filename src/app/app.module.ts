@@ -12,6 +12,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { RegisteruserComponent } from './registeruser/registeruser.component';
+import { RegisterComponent } from './register/register.component';
 
 
 
@@ -21,6 +22,7 @@ import { RegisteruserComponent } from './registeruser/registeruser.component';
     LoginComponent,
     DashboardComponent,
     RegisteruserComponent,
+    RegisterComponent,
     
 
   ],
