@@ -1,46 +1,12 @@
-<div class="container">
-    <div class="flex-grid">
-        <div class="pricing-table">
-            <h3 class="pricing-title">ADMIN</h3>
-            <ul class="table-list">
-                <li>View features</li>
-            </ul>
-            <div class="table-buy">
-                <a routerLink="/login" routerLinkActive class="pricing-action">Login</a>
-            </div>
-        </div>
-        <div class="pricing-table recommended">
-            <h3 class="pricing-title">EMPLOYEE</h3>
-            <ul class="table-list">
-                <li>Conduct Test</li>
-            </ul>
-            <div class="table-buy">
-                <a class="pricing-action">Login</a>
-            </div>
-        </div>
-        <div class="pricing-table">
-            <h3 class="pricing-title">STUDENT</h3>
-            <ul class="table-list">
-                <li>View Attendance</li>
-            </ul>
-            <div class="table-buy">
-                <a class="pricing-action">Login</a>
-            </div>
-        </div>
-        <div class="pricing-table recommended">
-            <h3 class="pricing-title">GUARDIAN</h3>
-            <ul class="table-list">
-                <li>Visit Student</li>
-            </ul>
-            <div class="table-buy">
-                <a class="pricing-action">Login</a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="flex-grid">
-    <div>
-        <h2>Contact Us</h2>
-        Some Content
+<mat-toolbar color="primary">
+    <span>Card view demo</span>
+    <button mat-button (click)="toggleGridColumns()" fxHide.lt-md>
+      <span *ngIf="gridColumns === 4">Three Columns</span>
+      <span *ngIf="gridColumns === 3">Four Columns</span>
+    </button>
+</mat-toolbar>
+<div class="content" fxLayout="row wrap" fxLayoutGap="16px grid">
+    <div [fxFlex]="(100/gridColumns) + '%'" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let card of cards">
+        <app-feature-card [feature]="card"> </app-feature-card>
     </div>
 </div>

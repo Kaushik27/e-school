@@ -1,0 +1,46 @@
+let prois = new Promise( (resolve,reject)->{
+    reolve()
+
+
+
+    reject()
+})
+
+--------------------------------------------
+
+let db ="dbb"
+
+
+db.query('select x from herether' , ()->{
+
+})
+
+
+let data :promise = db.query('select y from here ther');
+
+data.then(data->{
+
+
+
+})
+
+
+
+    data.subscribbe(data->{
+    })
+
+
+
+    --------------------------------------------
+
+    async await
+
+
+    async function1(){
+        let data  = await db.query('select y from here ther');
+    }
+
+
+console.log('one')
+   await function1()
+    console.log('two')

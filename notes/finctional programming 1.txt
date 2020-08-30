@@ -1,0 +1,46 @@
+
+
+
+
+
+
+display(){
+
+
+forloop  x => 1 : 10
+sysout x
+
+
+
+}
+
+
+
+displayEven(){
+
+
+forloop  x => 1 : 10
+if x % 2==0
+sysout x
+
+
+
+}
+
+
+displayOdd(){
+
+
+forloop  x => 1 : 10
+if x % 21=0
+sysout x
+
+
+
+}
+
+main(){
+    display()
+displayEven()
+displayOdd()
+}

@@ -11,9 +11,9 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { RegisteruserComponent } from './registeruser/registeruser.component';
 import { RegisterComponent } from './register/register.component';
-
+import { FeatureCardComponent } from './feature-card/feature-card.component';
+import {DashboardService} from "./data/dashboard/dashboard.service"
 
 
 @NgModule({
@@ -21,8 +21,8 @@ import { RegisterComponent } from './register/register.component';
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    RegisteruserComponent,
     RegisterComponent,
+    FeatureCardComponent,
     
 
   ],
@@ -36,7 +36,7 @@ import { RegisterComponent } from './register/register.component';
     MatButtonModule,
     FlexLayoutModule
   ],
-  providers: [],
+  providers: [DashboardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

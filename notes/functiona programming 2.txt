@@ -1,0 +1,34 @@
+functiona programming
+
+
+let isEven = return x% 2==0
+let isodd return x%2!=0
+
+
+class util{
+    let isActive = user =>{
+    x - y
+}
+}
+
+
+
+
+
+display(predicate){
+
+
+forloop  x => 1 : 10
+if(predicate())
+sysout x
+
+
+
+}
+
+
+main(){
+    display()
+    display(isEven)
+    display(isOdd)
+}
