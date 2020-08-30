@@ -7,7 +7,7 @@ import { DashboardService, FeatureCard } from "../data/dashboard/dashboard.servi
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-  title = 'Card View Demo';
+  title = 'e-school dashboard';
   gridColumns = 3;
   cards : FeatureCard[];
 

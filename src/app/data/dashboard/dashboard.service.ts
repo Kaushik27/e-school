@@ -20,7 +20,11 @@ export class DashboardService {
             title: "student",
             imgUrl: "https://picsum.photos/350/350",
             body: "lorem lorem ispisum"
-        },]
+        },{
+            title: "guardian",
+            imgUrl: "https://picsum.photos/400/400",
+            body: "lorem lorem ispisum"
+        }]
         return featureCards;
     }
 
