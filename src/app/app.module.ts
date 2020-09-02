@@ -6,7 +6,6 @@ import { MatButtonModule } from "@angular/material/button";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginComponent } from './login/login.component';
@@ -15,6 +14,9 @@ import { RegisterComponent } from './register/register.component';
 import { FeatureCardComponent } from './feature-card/feature-card.component';
 import {DashboardService} from "./data/dashboard/dashboard.service"
 
+import { AngularFireModule } from "@angular/fire";
+import { AngularFireDatabaseModule } from "@angular/fire/database";
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -22,9 +24,7 @@ import {DashboardService} from "./data/dashboard/dashboard.service"
     LoginComponent,
     DashboardComponent,
     RegisterComponent,
-    FeatureCardComponent,
-    
-
+    FeatureCardComponent
   ],
   imports: [
     BrowserModule,
@@ -34,9 +34,14 @@ import {DashboardService} from "./data/dashboard/dashboard.service"
     MatCardModule,
     MatToolbarModule,
     MatButtonModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    AngularFireModule.initializeApp(environment.firebase, 'e-school'),
+    AngularFireDatabaseModule
   ],
   providers: [DashboardService],
   bootstrap: [AppComponent]
 })
+
+
+
 export class AppModule { }

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "e-school-d13ac": {
+      "hosting": {
+        "e-school": [
+          "e-school-d13ac"
+        ]
+      }
+    }
+  }
+}
